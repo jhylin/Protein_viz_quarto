@@ -1,0 +1,19 @@
+---
+title: Testing
+format:
+  html:
+    code-copy: true
+toc: true
+# molstar: embed
+---
+
+### RCSB PDB
+
+Retrieve a protein from the RCSB PDB:
+
+`{{{< mol-rcsb 4mqt >}}}`
+
+{{< mol-rcsb 4mqt >}}
+
+
+Click on the ligand to focus or zoom-in on the ligand bound to receptor protein. This also shows the hydrogen bondings between the ligand and amino acid residues.
