@@ -17,3 +17,6 @@ Retrieve a protein from the RCSB PDB:
 
 
 Click on the ligand to focus or zoom-in on the ligand bound to receptor protein. This also shows the hydrogen bondings between the ligand and amino acid residues.
+
+MD trajectories and screenshots available.
+
