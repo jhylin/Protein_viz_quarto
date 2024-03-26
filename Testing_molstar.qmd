@@ -7,9 +7,11 @@ toc: true
 # molstar: embed
 ---
 
-This Quarto extension embeds a Molstar interactive viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting purposes across multi-disciplinary teams, particularly if the projects involve using protein structures, e.g. structure-based drug design. The only thing to note that this is for HTML pages only (rendered from Quarto documents).
+This Quarto extension embeds a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting purposes across multi-disciplinary teams, particularly if the projects involve using protein structures, e.g. structure-based drug design. The only thing to note that this is for HTML pages only (rendered from Quarto documents). 
 
-GitHub repository: https://github.com/jmbuhr/quarto-molstar
+Molstar webpage: https://molstar.org/
+
+GitHub repository for the Quarto extension: https://github.com/jmbuhr/quarto-molstar
 
 
 ### Example using RCSB PDB
