@@ -22,6 +22,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -86,17 +105,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="a-bit-of-background" class="level5">
 <h5 class="anchored" data-anchor-id="a-bit-of-background"><strong>A bit of background</strong></h5>
 <p>This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an <em>in silico</em> environment.</p>
-<p>Most bioinformaticians or structural biologists are probably already very familiar with this package, which is known as Molstar (or Mol*). Molstar is a 3D viewer for large macromolecules such as proteins, which are commonly used for work in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).</p>
+<p>Most bioinformaticians or structural biologists are probably already very familiar with this package, which is known as Molstar or Mol* <span class="citation" data-cites="Sehnal2021">(<a href="#ref-Sehnal2021" role="doc-biblioref">Sehnal et al. 2021</a>)</span>. Molstar is a 3D viewer for large macromolecules such as proteins, which are commonly used for work in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).</p>
 <p>A Quarto extension is currently available that embeds a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting or presentations in a multi-disciplinary setting, especially if the projects involved used protein structures (e.g.&nbsp;for a structure-based drug design project). The only thing to note is that this extension is for HTML pages only (since it’s rendered from Quarto documents).</p>
 <p><br></p>
 </section>
 <section id="some-useful-links" class="level5">
 <h5 class="anchored" data-anchor-id="some-useful-links"><strong>Some useful links</strong></h5>
 <ul>
-<li><p>Molstar webpage: <a href="https://molstar.org/">https://molstar.org/</a></p></li>
-<li><p>GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <a href="https://github.com/jmbuhr/quarto-molstar">https://github.com/jmbuhr/quarto-molstar</a></p></li>
-<li><p>Other Molstar example: <a href="https://ljmartin.github.io/sideprojects/dockviz2.html">https://ljmartin.github.io/sideprojects/dockviz2.html</a></p></li>
-<li><p>R Shiny and Molstar example (for people who prefer using R): <a href="https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations">https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations</a></p></li>
+<li><p>Molstar webpage: <a href="https://molstar.org/" class="uri">https://molstar.org/</a></p></li>
+<li><p>GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <a href="https://github.com/jmbuhr/quarto-molstar" class="uri">https://github.com/jmbuhr/quarto-molstar</a></p></li>
+<li><p>Other Molstar example: <a href="https://ljmartin.github.io/sideprojects/dockviz2.html" class="uri">https://ljmartin.github.io/sideprojects/dockviz2.html</a></p></li>
+<li><p>R Shiny and Molstar example (for people who prefer using R): <a href="https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations" class="uri">https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations</a></p></li>
 <li><p>Streamlit and Dash integration examples are available - <strong>add example</strong>.</p></li>
 </ul>
 <p><br></p>
@@ -107,17 +126,21 @@ ul.task-list li input[type="checkbox"] {
 <p><code>{{&lt; mol-rcsb 4mqt &gt;}}</code></p>
     <div id="app-4mqt" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-4mqt", {"layoutShowSequence":false,"viewportShowAnimation":true,"viewportShowSelectionMode":false,"emdbProvider":"rcsb","layoutShowLog":false,"pdbProvider":"rcsb","viewportShowExpand":true,"layoutShowRemoteState":false,"layoutIsExpanded":false,"layoutShowLeftPanel":true,"layoutShowControls":false}).then(viewer => {
+    molstar.Viewer.create("app-4mqt", {"emdbProvider":"rcsb","layoutShowLeftPanel":true,"viewportShowAnimation":true,"layoutShowRemoteState":false,"layoutShowControls":false,"pdbProvider":"rcsb","layoutIsExpanded":false,"viewportShowExpand":true,"layoutShowSequence":false,"viewportShowSelectionMode":false,"layoutShowLog":false}).then(viewer => {
     viewer.loadPdb("4mqt");    });
     </script>
     
 <p>To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g.&nbsp;hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g.&nbsp;pi-pi stacking).</p>
 <p>Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).</p>
 <p>MD trajectories are also available, although I haven’t quite got there yet but it’s useful to know this may be possible in a Quarto document which can be rendered as a HTML page.</p>
-<p><em>Add citations of Molstar and others if relevant</em></p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Sehnal2021" class="csl-entry" role="doc-biblioentry">
+Sehnal, David, Sebastian Bittrich, Mandar Deshpande, Radka Svobodová, Karel Berka, Václav Bazgier, Sameer Velankar, Stephen K Burley, Jaroslav Koča, and Alexander S Rose. 2021. <span>“Mol* Viewer: Modern Web App for 3D Visualization and Analysis of Large Biomolecular Structures.”</span> <em>Nucleic Acids Research</em> 49 (W1): W431–37. <a href="https://doi.org/10.1093/nar/gkab314">https://doi.org/10.1093/nar/gkab314</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
