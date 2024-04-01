@@ -1,0 +1,54 @@
+---
+title: Using Molstar in Quarto
+author: Jennifer HY Lin
+date: '2024-4-2'
+draft: true
+categories: 
+    - Notes
+    - Molecular viz
+format:
+  html:
+    code-copy: true
+toc: true
+# molstar: embed
+---
+
+#### **A bit of background**
+
+This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
+
+Most bioinformaticians or structural biologists are probably already very familiar with this package, which is known as Molstar (or Mol*). Molstar is a 3D viewer for large macromolecules such as proteins, which are commonly used for work in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).
+
+A Quarto extension is currently available that embeds a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting or presentations in a multi-disciplinary setting, especially if the projects involved used protein structures (e.g. for a structure-based drug design project). The only thing to note is that this extension is for HTML pages only (since it's rendered from Quarto documents). 
+
+<br>
+
+#### **Some useful links**
+
+* Molstar webpage: [https://molstar.org/](https://molstar.org/)
+
+* GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): [https://github.com/jmbuhr/quarto-molstar](https://github.com/jmbuhr/quarto-molstar)
+
+* Other Molstar example: [https://ljmartin.github.io/sideprojects/dockviz2.html](https://ljmartin.github.io/sideprojects/dockviz2.html)
+
+* R Shiny and Molstar example (for people who prefer using R): [https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations](https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations)
+
+* Streamlit and Dash integration examples are available.
+
+<br>
+
+#### **An example using RCSB PDB**
+
+Retrieve a protein from the RCSB PDB:
+
+`{{{< mol-rcsb 4mqt >}}}`
+
+{{< mol-rcsb 4mqt >}}
+
+To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g. hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g. pi-pi stacking).
+
+Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).
+
+MD trajectories are also available, although I haven't quite got there yet but it's useful to know this may be possible in a Quarto document which can be rendered as a HTML page.
+
+*Add citations of Molstar and others if relevant*
