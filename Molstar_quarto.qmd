@@ -14,7 +14,7 @@ toc: true
 bibliography: references.bib
 ---
 
-##### **A bit of background**
+##### **Background**
 
 This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
 
@@ -38,7 +38,7 @@ A Quarto extension is currently available that embeds a Molstar interactive 3D v
 
 <br>
 
-##### **An example using RCSB PDB**
+##### **An example using Molstar with RCSB PDB**
 
 Retrieve a protein from the RCSB PDB:
 
@@ -49,5 +49,7 @@ Retrieve a protein from the RCSB PDB:
 To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g. hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g. pi-pi stacking).
 
 Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).
+
+**Add screenshot png**
 
 MD trajectories are also available, although I haven't quite got there yet but it's useful to know this may be possible in a Quarto document which can be rendered as a HTML page.
