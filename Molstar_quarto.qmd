@@ -13,7 +13,7 @@ toc: true
 # molstar: embed
 ---
 
-#### **A bit of background**
+##### **A bit of background**
 
 This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
 
@@ -23,7 +23,7 @@ A Quarto extension is currently available that embeds a Molstar interactive 3D v
 
 <br>
 
-#### **Some useful links**
+##### **Some useful links**
 
 * Molstar webpage: [https://molstar.org/](https://molstar.org/)
 
@@ -33,11 +33,11 @@ A Quarto extension is currently available that embeds a Molstar interactive 3D v
 
 * R Shiny and Molstar example (for people who prefer using R): [https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations](https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations)
 
-* Streamlit and Dash integration examples are available.
+* Streamlit and Dash integration examples are available - **add example**.
 
 <br>
 
-#### **An example using RCSB PDB**
+##### **An example using RCSB PDB**
 
 Retrieve a protein from the RCSB PDB:
 
