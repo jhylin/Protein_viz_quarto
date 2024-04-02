@@ -48,8 +48,10 @@ Retrieve a protein from the RCSB PDB:
 
 To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g. hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g. pi-pi stacking).
 
-Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).
+Screenshots or state snapshots are also available from the viewer (other utility functions can be found on the top right corner of the viewer).
 
-**Add screenshot png**
+![An example of ligand-4MQT close-up screenshot](close-up_shot.png)
 
 MD trajectories are also available, although I haven't quite got there yet but it's useful to know this may be possible in a Quarto document which can be rendered as a HTML page.
+
+It's also possible to upload AlphaFold-sourced proteins, or from other file sources (see example shown from [Molstar example](https://jmbuhr.de/quarto-molstar/)).

@@ -114,8 +114,8 @@ div.csl-indent {
 <ul>
 <li><p>Molstar webpage: <a href="https://molstar.org/" class="uri">https://molstar.org/</a></p></li>
 <li><p>GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <a href="https://github.com/jmbuhr/quarto-molstar" class="uri">https://github.com/jmbuhr/quarto-molstar</a> - example provided <a href="https://jmbuhr.de/quarto-molstar/">https://jmbuhr.de/quarto-molstar/</a></p></li>
-<li><p>Other Molstar example: <a href="https://ljmartin.github.io/sideprojects/dockviz2.html" class="uri">https://ljmartin.github.io/sideprojects/dockviz2.html</a></p></li>
-<li><p>R Shiny and Molstar example (for people who prefer using R): <a href="https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations" class="uri">https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations</a></p></li>
+<li><p>Other Molstar example: <a href="https://ljmartin.github.io/sideprojects/dockviz2.html">https://ljmartin.github.io/sideprojects/dockviz2.html</a></p></li>
+<li><p>R Shiny and Molstar example (for people who prefer using R): <a href="https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations">https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations</a></p></li>
 <li><p>Streamlit and Dash integrations are also possible, this also makes me think that I could probably try integrating Molstar with Shiny for Python, it’ll likely be a future side project.</p></li>
 </ul>
 <p><br></p>
@@ -126,14 +126,20 @@ div.csl-indent {
 <p><code>{{&lt; mol-rcsb 4mqt &gt;}}</code></p>
     <div id="app-4mqt" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-4mqt", {"layoutIsExpanded":false,"layoutShowLog":false,"viewportShowSelectionMode":false,"emdbProvider":"rcsb","layoutShowRemoteState":false,"layoutShowControls":false,"layoutShowLeftPanel":true,"layoutShowSequence":false,"pdbProvider":"rcsb","viewportShowAnimation":true,"viewportShowExpand":true}).then(viewer => {
+    molstar.Viewer.create("app-4mqt", {"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowControls":false,"viewportShowExpand":true,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowLog":false}).then(viewer => {
     viewer.loadPdb("4mqt");    });
     </script>
     
 <p>To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g.&nbsp;hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g.&nbsp;pi-pi stacking).</p>
 <p>Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).</p>
-<p><strong>Add screenshot png</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="close-up_shot.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">ligand-4MQT close-up screenshot</figcaption><p></p>
+</figure>
+</div>
 <p>MD trajectories are also available, although I haven’t quite got there yet but it’s useful to know this may be possible in a Quarto document which can be rendered as a HTML page.</p>
+<p>It’s also possible to upload AlphaFold-sourced proteins, or from other file sources (see example shown from <a href="https://jmbuhr.de/quarto-molstar/">Molstar example</a>).</p>
 
 </section>
 
