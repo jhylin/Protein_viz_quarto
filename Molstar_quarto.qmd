@@ -28,13 +28,13 @@ A Quarto extension is currently available that embeds a Molstar interactive 3D v
 
 -   Molstar webpage: <https://molstar.org/>
 
--   GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <https://github.com/jmbuhr/quarto-molstar>
+-   GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <https://github.com/jmbuhr/quarto-molstar> - example provided [https://jmbuhr.de/quarto-molstar/](https://jmbuhr.de/quarto-molstar/)
 
--   Other Molstar example: <https://ljmartin.github.io/sideprojects/dockviz2.html>
+-   Other Molstar example: [https://ljmartin.github.io/sideprojects/dockviz2.html](https://ljmartin.github.io/sideprojects/dockviz2.html)
 
--   R Shiny and Molstar example (for people who prefer using R): <https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations>
+-   R Shiny and Molstar example (for people who prefer using R): [https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations](https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations)
 
--   Streamlit and Dash integration examples are available - **add example**.
+-   Streamlit and Dash integrations are also possible, this also makes me think that I could probably try integrating Molstar with Shiny for Python, it'll likely be a future side project.
 
 <br>
 
