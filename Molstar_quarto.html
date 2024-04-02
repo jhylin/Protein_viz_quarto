@@ -104,9 +104,9 @@ div.csl-indent {
 
 <section id="background" class="level5">
 <h5 class="anchored" data-anchor-id="background"><strong>Background</strong></h5>
-<p>This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an <em>in silico</em> environment.</p>
-<p>Most bioinformaticians or structural biologists are probably already very familiar with this package, which is known as Molstar or Mol* <span class="citation" data-cites="Sehnal2021">(<a href="#ref-Sehnal2021" role="doc-biblioref">Sehnal et al. 2021</a>)</span>. Molstar is a 3D viewer for large macromolecules such as proteins, which are commonly used for work in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).</p>
-<p>A Quarto extension is currently available that embeds a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting or presentations in a multi-disciplinary setting, especially if the projects involved used protein structures (e.g.&nbsp;for a structure-based drug design project). The only thing to note is that this extension is for HTML pages only (since it’s rendered from Quarto documents).</p>
+<p>This is a short post (note) for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an <em>in silico</em> environment.</p>
+<p>Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol* <span class="citation" data-cites="Sehnal2021">(<a href="#ref-Sehnal2021" role="doc-biblioref">Sehnal et al. 2021</a>)</span>. Molstar is a 3D viewer for large macromolecules (e.g.&nbsp;proteins), which are commonly used in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).</p>
+<p>A Quarto extension has been developed to embed a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it’s useful for reports or presentations. The only thing to note is that this extension is currently presented as HTML pages only (rendered from Quarto documents).</p>
 <p><br></p>
 </section>
 <section id="some-useful-links" class="level5">
@@ -122,20 +122,20 @@ div.csl-indent {
 </section>
 <section id="an-example-using-molstar-with-rcsb-pdb" class="level5">
 <h5 class="anchored" data-anchor-id="an-example-using-molstar-with-rcsb-pdb"><strong>An example using Molstar with RCSB PDB</strong></h5>
-<p>Retrieve a protein from the RCSB PDB:</p>
+<p>Retrieve a protein (PDB ID: 4MQT) from the RCSB PDB:</p>
 <p><code>{{&lt; mol-rcsb 4mqt &gt;}}</code></p>
     <div id="app-4mqt" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-4mqt", {"layoutShowSequence":false,"viewportShowAnimation":true,"layoutShowControls":false,"viewportShowExpand":true,"layoutIsExpanded":false,"viewportShowSelectionMode":false,"layoutShowLeftPanel":true,"emdbProvider":"rcsb","layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowLog":false}).then(viewer => {
+    molstar.Viewer.create("app-4mqt", {"layoutShowControls":false,"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutIsExpanded":false,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowSequence":false,"emdbProvider":"rcsb","viewportShowAnimation":true,"viewportShowExpand":true,"layoutShowLog":false}).then(viewer => {
     viewer.loadPdb("4mqt");    });
     </script>
     
 <p>To focus or zoom-in on the ligand bound to the receptor, just click on the ligand first. This shows most of the chemical interactions between the protein receptor and ligand bound to it (e.g.&nbsp;hydrogen bondings between the ligand and amino acid residues, other chemical interactions will appear if present e.g.&nbsp;pi-pi stacking).</p>
-<p>Screenshots or state snapshots are also available (other utility functions can be found on the top right corner of the viewer).</p>
+<p>Screenshots or state snapshots are also available from the viewer (other utility functions can be found on the top right corner of the viewer).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="close-up_shot.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">ligand-4MQT close-up screenshot</figcaption><p></p>
+<p></p><figcaption class="figure-caption">An example of ligand-4MQT close-up screenshot</figcaption><p></p>
 </figure>
 </div>
 <p>MD trajectories are also available, although I haven’t quite got there yet but it’s useful to know this may be possible in a Quarto document which can be rendered as a HTML page.</p>

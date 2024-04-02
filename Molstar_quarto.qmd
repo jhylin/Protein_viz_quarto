@@ -16,11 +16,11 @@ bibliography: references.bib
 
 ##### **Background**
 
-This is a short post for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
+This is a short post (note) for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
 
-Most bioinformaticians or structural biologists are probably already very familiar with this package, which is known as Molstar or Mol\* [@Sehnal2021]. Molstar is a 3D viewer for large macromolecules such as proteins, which are commonly used for work in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).
+Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol\* [@Sehnal2021]. Molstar is a 3D viewer for large macromolecules (e.g. proteins), which are commonly used in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).
 
-A Quarto extension is currently available that embeds a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it could be useful for reporting or presentations in a multi-disciplinary setting, especially if the projects involved used protein structures (e.g. for a structure-based drug design project). The only thing to note is that this extension is for HTML pages only (since it's rendered from Quarto documents).
+A Quarto extension has been developed to embed a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it's useful for reports or presentations. The only thing to note is that this extension is currently presented as HTML pages only (rendered from Quarto documents).
 
 <br>
 
@@ -40,7 +40,7 @@ A Quarto extension is currently available that embeds a Molstar interactive 3D v
 
 ##### **An example using Molstar with RCSB PDB**
 
-Retrieve a protein from the RCSB PDB:
+Retrieve a protein (PDB ID: 4MQT) from the RCSB PDB:
 
 `{{{< mol-rcsb 4mqt >}}}`
 
