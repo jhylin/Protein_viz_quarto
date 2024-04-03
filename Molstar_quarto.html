@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jennifer HY Lin">
-<meta name="dcterms.date" content="2024-04-02">
+<meta name="dcterms.date" content="2024-04-04">
 
 <title>Using Molstar in Quarto</title>
 <style>
@@ -92,7 +92,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 2, 2024</p>
+      <p class="date">April 4, 2024</p>
     </div>
   </div>
   
@@ -104,16 +104,16 @@ div.csl-indent {
 
 <section id="background" class="level5">
 <h5 class="anchored" data-anchor-id="background"><strong>Background</strong></h5>
-<p>This is a short post (note) for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an <em>in silico</em> environment.</p>
-<p>Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol* <span class="citation" data-cites="Sehnal2021">(<a href="#ref-Sehnal2021" role="doc-biblioref">Sehnal et al. 2021</a>)</span>. Molstar is a 3D viewer for large macromolecules (e.g.&nbsp;proteins), which are commonly used in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).</p>
+<p>This is really a short post (note) for myself and probably for others who may be interested in software tools to visualise macromolecules and small molecules in an <em>in silico</em> environment.</p>
+<p>Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol* <span class="citation" data-cites="Sehnal2021">(<a href="#ref-Sehnal2021" role="doc-biblioref">Sehnal et al. 2021</a>)</span>. Molstar is a 3D viewer for large macromolecules (e.g.&nbsp;proteins), which are commonly used in structural biology and drug discovery (and also other related scientific disciplines).</p>
 <p>A Quarto extension has been developed to embed a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it’s useful for reports or presentations. The only thing to note is that this extension is currently presented as HTML pages only (rendered from Quarto documents).</p>
 <p><br></p>
 </section>
 <section id="some-useful-links" class="level5">
 <h5 class="anchored" data-anchor-id="some-useful-links"><strong>Some useful links</strong></h5>
 <ul>
-<li><p>Molstar webpage: <a href="https://molstar.org/" class="uri">https://molstar.org/</a></p></li>
-<li><p>GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <a href="https://github.com/jmbuhr/quarto-molstar" class="uri">https://github.com/jmbuhr/quarto-molstar</a> - example provided <a href="https://jmbuhr.de/quarto-molstar/">https://jmbuhr.de/quarto-molstar/</a></p></li>
+<li><p>Molstar webpage: <a href="https://molstar.org/">https://molstar.org/</a></p></li>
+<li><p>GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <a href="https://github.com/jmbuhr/quarto-molstar">https://github.com/jmbuhr/quarto-molstar</a> - example provided <a href="https://jmbuhr.de/quarto-molstar/">https://jmbuhr.de/quarto-molstar/</a></p></li>
 <li><p>Other Molstar example: <a href="https://ljmartin.github.io/sideprojects/dockviz2.html">https://ljmartin.github.io/sideprojects/dockviz2.html</a></p></li>
 <li><p>R Shiny and Molstar example (for people who prefer using R): <a href="https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations">https://www.appsilon.com/post/shiny-molstar-r-package-molecular-structures-visualizations</a></p></li>
 <li><p>Streamlit and Dash integrations are also possible, this also makes me think that I could probably try integrating Molstar with Shiny for Python, it’ll likely be a future side project.</p></li>
@@ -126,7 +126,7 @@ div.csl-indent {
 <p><code>{{&lt; mol-rcsb 4mqt &gt;}}</code></p>
     <div id="app-4mqt" class="molstar-app"></div>
     <script type="text/javascript">
-    molstar.Viewer.create("app-4mqt", {"layoutShowControls":false,"layoutShowLeftPanel":true,"viewportShowSelectionMode":false,"layoutIsExpanded":false,"layoutShowRemoteState":false,"pdbProvider":"rcsb","layoutShowSequence":false,"emdbProvider":"rcsb","viewportShowAnimation":true,"viewportShowExpand":true,"layoutShowLog":false}).then(viewer => {
+    molstar.Viewer.create("app-4mqt", {"layoutShowRemoteState":false,"layoutShowControls":false,"pdbProvider":"rcsb","layoutShowSequence":false,"layoutShowLog":false,"layoutIsExpanded":false,"emdbProvider":"rcsb","viewportShowAnimation":true,"viewportShowSelectionMode":false,"viewportShowExpand":true,"layoutShowLeftPanel":true}).then(viewer => {
     viewer.loadPdb("4mqt");    });
     </script>
     

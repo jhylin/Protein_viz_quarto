@@ -1,7 +1,7 @@
 ---
 title: Using Molstar in Quarto
 author: Jennifer HY Lin
-date: '2024-4-2'
+date: '2024-4-4'
 draft: true
 categories: 
     - Notes
@@ -16,9 +16,9 @@ bibliography: references.bib
 
 ##### **Background**
 
-This is a short post (note) for myself really and probably for others who may be interested in alternative software tools to visualise macromolecules and small molecules in an *in silico* environment.
+This is really a short post (note) for myself and probably for others who may be interested in software tools to visualise macromolecules and small molecules in an *in silico* environment.
 
-Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol\* [@Sehnal2021]. Molstar is a 3D viewer for large macromolecules (e.g. proteins), which are commonly used in molecular biology, structural biology and drug discovery (and also other related scientific disciplines).
+Most bioinformaticians or structural biologists are probably already familiar with this software package, Molstar or Mol\* [@Sehnal2021]. Molstar is a 3D viewer for large macromolecules (e.g. proteins), which are commonly used in structural biology and drug discovery (and also other related scientific disciplines).
 
 A Quarto extension has been developed to embed a Molstar interactive 3D viewer inside a Quarto markdown document. The main advantage of this is that it's useful for reports or presentations. The only thing to note is that this extension is currently presented as HTML pages only (rendered from Quarto documents).
 
@@ -26,9 +26,9 @@ A Quarto extension has been developed to embed a Molstar interactive 3D viewer i
 
 ##### **Some useful links**
 
--   Molstar webpage: <https://molstar.org/>
+-   Molstar webpage: [https://molstar.org/](https://molstar.org/)
 
--   GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): <https://github.com/jmbuhr/quarto-molstar> - example provided [https://jmbuhr.de/quarto-molstar/](https://jmbuhr.de/quarto-molstar/)
+-   GitHub repository for the Quarto extension (thanks to the contributing team for this extension!): [https://github.com/jmbuhr/quarto-molstar](https://github.com/jmbuhr/quarto-molstar) - example provided [https://jmbuhr.de/quarto-molstar/](https://jmbuhr.de/quarto-molstar/)
 
 -   Other Molstar example: [https://ljmartin.github.io/sideprojects/dockviz2.html](https://ljmartin.github.io/sideprojects/dockviz2.html)
 
